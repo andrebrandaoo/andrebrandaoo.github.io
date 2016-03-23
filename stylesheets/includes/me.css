@@ -1,32 +1,13 @@
 .me{
+  padding: 40px 0;
   text-align: center;
 }
-
-.me strong{
-  display: block;
+.me a{
+  font-size: 60px;
+  font-weight: 600;
+  color: #818181;
 }
-
-.me img{
-  width:157px;
-  height:157px;
-  filter: grayscale(0.5);
-  -webkit-filter:grayscale(0.5);
-  -moz-filter:grayscale(0.5);
-}
-
-.me .me-img{
-  display: block;
-  width:157px;
-  height:157px;
-  border-radius: 50%;
-  border-radius: 50%;
-  border: 6px solid #526e82;
-  margin: 0 auto;
-}
-
-.me .me-name{
-  color: #526e82;
-  font-size: 1.2em;
-  margin-top: 20px;
-  display: block;
+.me a strong{
+  font-weight: 600;
+  color:#526e82;
 }

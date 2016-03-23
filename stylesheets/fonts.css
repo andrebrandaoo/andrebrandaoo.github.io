@@ -6,22 +6,22 @@
 }
 
 @font-face {
-  font-family: 'Gotham';
+  font-family: 'GothamRounded';
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/GothamRounded-Medium.otf");
 }
 
 @font-face {
-  font-family: 'Gotham';
+  font-family: 'GothamRounded';
   font-style: normal;
   font-weight: 600;
   src: url("../fonts/GothamRounded-Book.otf");
 }
 
 @font-face {
-  font-family: 'Gotham';
+  font-family: 'GothamRounded';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 800;
   src: url("../fonts/GothamRounded-Bold.otf");
 }
