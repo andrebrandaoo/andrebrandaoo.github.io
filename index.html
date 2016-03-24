@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="theme-color" content="#526e82">
-    <meta name="msapplication-navbutton-color" content="#526e82">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#526e82">
+    <meta name="theme-color" content="#2C6668">
+    <meta name="msapplication-navbutton-color" content="#2C6668">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2C6668">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -18,44 +18,130 @@
   <body>
 
     <section class="section one">
-      <div class="container">
+      <div class="bar info">
+      </div>
 
-        <h1 class="me">
-          <a class="me-img" href="/" title="André Brandão"><strong>andré</strong> brandão</a>
-        </h1>
+      <div class="container profile">
 
-        <div class="bio">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
-          </p>
-          <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.
-          </p>
+        <div class="col-lg-12">
+          <img class="img-responsive" src="images/profile.png" alt="André Brandão" />
 
-          <figure class="figure">
-              <img class="img about" src="images/about.jpg" alt="André Brandão" />
-          </figure>
+          <span class="name">André Brandão</span>
+          <span class="skills"  data-percent="80">Frontend Developer</span>
         </div>
 
       </div>
-
-      <div class="bar info">
-        <p class="infos">
-          <a href="tel:+55018981879713">+ 55 018 98187 9713</a>
-          <a href="mailto:andrebf4@gmail.com">adrebf4@gmail.com</a>
-        </p>
-      </div>
-
     </section><!--end of section one-->
+
+    <div class="section default">
+      <div class="container">
+        <div class="box">
+
+          <h1 class="default-title about">Sobre</h1>
+
+          <p class="default-p">
+            Sou André Brandão, 24 anos, residente da cidade de Presidente Prudente.
+            Trabalho com desenvolvimento de sites e blogs sempre buscando por tecnologias
+            atuais, prezando pela qualidade do serviço. Faça Download do meu currículo
+            abaixo ou entre em contato pelo email: <a href="mailto:andrebf4@gmail.com" title="mandar e-mail">andrebf4@gmail.com</a>
+            ou pelo telefone: <a href="tel:+55018981879713" title="ligar para celular">+55 018 98187-9713</a>.
+          </p>
+
+          <a class="btn btn-default download" href="#"><i class="fa fa-download"></i>Fazer download do currículo</a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="section default">
+      <div class="container">
+        <div class="box">
+
+          <h1 class="default-title skills">Skills</h1>
+
+          <div class="row">
+
+            <div class="col-sm-3">
+              <span class="skill" data-percent="80">
+                HTML5 <strong>80%</strong>
+              </span>
+            </div>
+
+            <div class="col-sm-3">
+              <span class="skill" data-percent="75">
+                CSS3 <strong>75%</strong>
+              </span>
+            </div>
+
+            <div class="col-sm-3">
+              <span class="skill" data-percent="50">
+                Javascript <strong>50%</strong>
+              </span>
+            </div>
+
+            <div class="col-sm-3">
+              <span class="skill" data-percent="50">
+                Jquery <strong>50%</strong>
+              </span>
+            </div>
+
+            <div class="col-sm-3">
+              <span class="skill" data-percent="40">
+                AngularJS <strong>40%</strong>
+              </span>
+            </div>
+
+            <div class="col-sm-3">
+              <span class="skill" data-percent="70">
+                PHP <strong>70%</strong>
+              </span>
+            </div>
+
+            <div class="col-sm-3">
+              <span class="skill" data-percent="85">
+                Wordpress <strong>85%</strong>
+              </span>
+            </div>
+
+            <div class="col-sm-3">
+              <span class="skill" data-percent="50">
+                Git <strong>50%</strong>
+              </span>
+            </div>
+
+            <div class="col-sm-3">
+              <span class="skill" data-percent="80">
+                Responsivo<strong>80%</strong>
+              </span>
+            </div>
+
+            <div class="col-sm-3">
+              <span class="skill" data-percent="80">
+                SASS&Stylus <strong>80%</strong>
+              </span>
+            </div>
+
+            <div class="col-sm-3">
+              <span class="skill" data-percent="70">
+                Photoshop <strong>70%</strong>
+              </span>
+            </div>
+
+            <div class="col-sm-3">
+              <span class="skill" data-percent="30">
+                Illustrator <strong>30%</strong>
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
 
   <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="http://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
   <script src="js/main.js"></script>
   </body>
 </html>

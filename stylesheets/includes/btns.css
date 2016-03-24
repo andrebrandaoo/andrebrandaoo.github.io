@@ -1,0 +1,9 @@
+.btn.btn-default{
+  padding: 15px 10px;
+  border: none;
+  display: block;
+  max-width: 250px;
+  margin: 0 auto;
+}
+.btn.btn-default.download{background: #2C6668; color: #fff;}
+.btn.btn-default.download i{margin-right: 10px;}

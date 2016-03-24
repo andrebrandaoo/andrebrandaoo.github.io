@@ -6,6 +6,7 @@ body{
   color: #7a7a7a;
   height: 100%;
   width: 100%;
+  background-color: #eeedef;
 }
 
 h1,h2,h3,h4,h5,h6 {margin: 0;}
@@ -23,4 +24,25 @@ a{
   clear: both;
   font-size: 0.9em;
   font-weight: 200;
+}
+
+.default-title{
+  text-align: center;
+  font-size: 2em;
+  font-weight: 800;
+  display: block;
+  margin: 10px 0 20px 0;
+}
+.default-title.about{color: #2C6668;}
+.default-title.skills{color: #4FC2F8;}
+
+.default-p{
+  width: 100%;
+  text-align: justify;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+.default-p a{
+  color: #2C6668;
+  font-weight:800;
 }

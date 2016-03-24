@@ -1,10 +1,11 @@
 .bar.info{
   width: 100%;
-  height: 30px;
-  background: #526e82;
-  position: absolute;
-  bottom: 0;
+  height: 60px;
+  background: #2C6668;
+  position: fixed;
+  top: 0;
   left: 0;
+  z-index: 100;
 }
 
 .infos{
