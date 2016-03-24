@@ -7,6 +7,7 @@ body{
   height: 100%;
   width: 100%;
   background-color: #eeedef;
+  position: relative;
 }
 
 h1,h2,h3,h4,h5,h6 {margin: 0;}
@@ -45,4 +46,11 @@ a{
 .default-p a{
   color: #2C6668;
   font-weight:800;
+}
+
+.title{margin-top: 11px;}
+.title a{color: #fff;}
+.title a:hover{
+  text-decoration: none;
+  color: #fff;
 }
