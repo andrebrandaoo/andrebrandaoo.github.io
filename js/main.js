@@ -14,7 +14,7 @@ var main = function (){
     });
   });
 
-  $( "#menu" ).on('click touchstart', function(e) {
+  $( ".btn-material" ).on('click touchstart', function(e) {
     e.preventDefault();
     if($('.toggle-icon').hasClass('fa-bars')){
       e.preventDefault();
@@ -27,7 +27,6 @@ var main = function (){
       $('.nav').animate({
         right: "0px"
       }, 200);
-
       $('body').animate({
         right: "250px"
       }, 200);
@@ -48,11 +47,9 @@ var main = function (){
       $('.nav').animate({
         right: "-250px"
       }, 200);
-
       $('body').animate({
         right: "0px"
       }, 200);
-
       $('.bar').animate({
         right: "0px"
       }, 200);
