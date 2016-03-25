@@ -1,6 +1,21 @@
+.blog,
 .profile{
   text-align: center;
   color: #fff;
+}
+
+.blog{
+  position:relative;
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+.blog-inner{
+  position:relative;
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .profile img{
@@ -8,12 +23,14 @@
   margin: 22px auto;
 }
 
+.blog .name,
 .profile .name{
   width: 100%;
   font-weight: 400;
   font-size: 3em;
   display: block;
 }
+.blog .skills,
 .profile .skills{
   font-weight: 200;
   font-size: 1.5em;
