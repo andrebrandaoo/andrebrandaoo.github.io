@@ -1,7 +1,34 @@
-@import "includes/default.css";
-@import "includes/sections.css";
-@import "includes/bars.css";
-@import "includes/profile.css";
-@import "includes/btns.css";
-@import "includes/skills.css";
-@import "includes/nav.css";
+.hero.is-primary {
+  background-image: linear-gradient(45deg, #673AB7, #00BCD4 100%);
+  padding: 10px;
+}
+
+.profile{
+  max-width: 150px;
+  height: auto;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, .3);
+  border-radius: 50%;
+}
+
+.dev{
+  font-size: 12rem;
+}
+
+.bio{
+  margin-top: 6rem;
+}
+
+.border{
+  border:  1px solid rgba(255, 255, 255, .7);
+}
+
+.tabs a{
+  border: 0;
+}
+
+@media (max-width:400px) {
+  .bio{
+    margin-top: 4.4rem;
+    padding-left: 15px;
+  }
+}
