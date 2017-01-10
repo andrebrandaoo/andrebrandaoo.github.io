@@ -87,10 +87,6 @@ a{
   margin-top: 4px;
 }
 
-.card-content span.cv-skill{
-  margin: 20px 0;
-}
-.cv-title-skills{
-  display: inline;
-  margin: 3px 10px 0 0;
+i{
+  margin-right: 10px
 }
