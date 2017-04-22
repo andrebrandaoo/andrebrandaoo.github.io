@@ -1,0 +1,20 @@
+.section
+  size(100%, 100vh)
+  display flex
+  flex-direction row
+  flex-flow row wrap
+  flex-wrap wrap
+
+  &.primary
+    background $colors['primary']
+
+  &.secondary
+    background $colors['secondary']
+
+  &.light-gray
+    background $colors['light-gray']
+
+  .align-start
+    align-self flex-start
+  .align-end
+    align-self flex-end

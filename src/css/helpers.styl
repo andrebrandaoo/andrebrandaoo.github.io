@@ -8,27 +8,11 @@
   clearfix()
 
 .container
-  center(max-width, $pad: 10px)
+  width 1200px
+  margin 0 auto
+  padding 0 10px
+  @media(max-width 1200px)
+    width 100%
 
 .clearfix
   clearfix()
-
-li
-  list-style none
-  &:before
-    content "• "
-    font-weight bold
-  &.no-style
-    &:before
-      display none
-
-.pointer
-  cursor pointer
-
-.hidden-mobile
-  @media (max-width 768px)
-    display none !important
-
-.hidden-desktop
-  @media(min-width 769px)
-    display none
