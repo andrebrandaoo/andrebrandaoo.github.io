@@ -9,9 +9,17 @@
   .pic
     size(236px, 236px)
     border-radius 50%
+    @media(max-width 768px)
+      margin-top 20px
+      size(200px, 200px)
+      border-width 4px
+      text-shadow 1px 3px 5px rgba(0, 0, 0, .5)
     border 6px solid $colors['light']
 
+
   .bio
-    font-size 36px
+    font-size 2rem
     margin-top 20px
+    @media(max-width 768px)
+      margin-bottom 20px
     color $colors['light']
