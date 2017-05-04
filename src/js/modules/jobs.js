@@ -4,8 +4,7 @@ import 'slick-carousel'
 $(document).ready(() => {
 
   $('#jobs-list').slick({
-    autoplay: true,
-    autoplaySpeed: 5000,
+    autoplay: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
