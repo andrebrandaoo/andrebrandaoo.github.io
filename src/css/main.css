@@ -1,0 +1,77 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: sans-serif;
+  color: #fcfcfc;
+  background-color: #222;
+  overflow: hidden;
+}
+
+body {
+  padding: 10px;
+}
+
+h1 {
+  position: relative;
+  z-index: 10;
+  font-size: 38px;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, .6);
+  display: inline-block;
+  opacity: 1;
+  transform: scale(1);
+  opacity: 0;
+  transform: scale(.5);
+  animation: fadein 1s linear forwards;
+}
+
+h1:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 4px;
+  background: #f2f2f2;
+  border-radius: 5px;
+  bottom: -7px;
+  left: 50%;
+  right: 0;
+  animation: init .4s 1.2s linear forwards;
+}
+
+.svg-background {
+  position: fixed;
+  max-width: 300px;
+  max-height: 300px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+  padding: 10px;
+  opacity: 0;
+  transform: scale(.5);
+  animation: fadein .5s linear forwards;
+}
+.svg-background path {
+  fill: #2f2f2f;
+}
+
+@keyframes init {
+  to { width: 100%; left: 0; }
+}
+
+@keyframes fadein {
+  to { opacity: 1; transform: scale(1); }
+}
