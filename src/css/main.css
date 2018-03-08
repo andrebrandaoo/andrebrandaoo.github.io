@@ -7,6 +7,9 @@
     @Buttons
     @Grid
     @Hero
+    @Introduction
+    @Sections
+    @Animations
 
     //===========//
     //= Colors =//
@@ -27,7 +30,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem;
 }
 
@@ -138,3 +141,86 @@ html, body {
 }
 
 /* @Hero */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/introduction.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  position: relative;
+}
+
+.hero:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(90deg, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
+  z-index: 0;
+}
+
+.hero-container {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  z-index: 10;
+  display: block;
+}
+
+/* @Introduction */
+#introduction .logo {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+#introduction .logo path {
+  fill: transparent;
+  stroke: #FFF;
+  stroke-width: 1px;
+  stroke-dasharray: 155;
+  stroke-dashoffset: 155;
+  animation: draw 2s linear forwards;
+}
+
+#introduction h3 {
+  color: #FFF;
+  font-size: 4rem;
+  opacity: 0;
+  animation: fadein .5s 2s linear forwards;
+  text-shadow: 0 0 10px rgba(0, 0, 0, .6);
+}
+
+/* @Sections */
+.section {
+  padding: 50px 0;
+}
+
+.section .section-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.section .section-sub {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+
+/* @Animations */
+@keyframes fadein {
+  to { opacity: 1; }
+}
+
+@keyframes draw {
+  80% { stroke-dashoffset: 0; fill: transparent; }
+  100% { stroke-dashoffset: 0; fill: #fff; }
+}
