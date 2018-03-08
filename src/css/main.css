@@ -1,77 +1,140 @@
+/*
+    //======================//
+    //= Find in this file =//
+    //====================//
+    @Reset
+    @Debug
+    @Buttons
+    @Grid
+    @Hero
+
+    //===========//
+    //= Colors =//
+    //=========//
+
+    @Primary = #fed766
+    @Primary = #252a30
+    @Primary = #febc66
+    @Primary = #fe6666
+    @Primary = #66befe
+    @Primary = #66fe96
+*/
+
+/* @Reset */
 *,
 *:before,
 *:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+  font-size: 1.3rem;
 }
+
+html { font-size: 62.5%; }
+
 html, body {
   height: 100vh;
   width: 100vw;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: sans-serif;
-  color: #fcfcfc;
-  background-color: #222;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-body {
-  padding: 10px;
-}
+/* @Debug */
+.debug { border: 1px solid red; }
 
-h1 {
-  position: relative;
-  z-index: 10;
-  font-size: 38px;
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, .6);
+/* @Buttons */
+.btn {
+  cursor: pointer;
+  height: auto;
+  padding: 1.2rem 3.2rem;
+  font-size: 1.3rem;
+  line-height: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all .3s ease-in-out;
+  letter-spacing: 0;
+  border-radius: 50px;
+  border: 2px solid;
   display: inline-block;
-  opacity: 1;
-  transform: scale(1);
-  opacity: 0;
-  transform: scale(.5);
-  animation: fadein 1s linear forwards;
 }
 
-h1:before {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 4px;
-  background: #f2f2f2;
-  border-radius: 5px;
-  bottom: -7px;
-  left: 50%;
-  right: 0;
-  animation: init .4s 1.2s linear forwards;
+.btn.block { display: block; width: 100%; }
+
+.btn:focus,
+.btn:active { outline: none; }
+
+.btn.primary { color: #252a30; background-color: transparent; border: 2px solid #fed766; }
+.btn.primary:hover,
+.btn.primary:active,
+.btn.primary:focus { color: #252a30; background-color: #fed766; border: 2px solid #fed766; }
+
+.btn.secondary { color: #252a30; background-color: transparent; border: 2px solid #252a30; }
+.btn.secondary:hover,
+.btn.secondary:active,
+.btn.secondary:focus { color: #fed766; background-color: #252a30; border: 2px solid #252a30; }
+
+.btn.warning { color: #252a30; background-color: transparent; border: 2px solid #febc66; }
+.btn.warning:hover,
+.btn.warning:active,
+.btn.warning:focus { color: #252a30; background-color: #febc66; border: 2px solid #febc66; }
+
+.btn.danger { color: #252a30; background-color: transparent; border: 2px solid #fe6666; }
+.btn.danger:hover,
+.btn.danger:active,
+.btn.danger:focus { color: #252a30; background-color: #fe6666; border: 2px solid #fe6666; }
+
+.btn.info { color: #252a30; background-color: transparent; border: 2px solid #66befe; }
+.btn.info:hover,
+.btn.info:active,
+.btn.info:focus { color: #252a30; background-color: #66befe; border: 2px solid #66befe; }
+
+.btn.success { color: #252a30; background-color: transparent; border: 2px solid #66fe96; }
+.btn.success:hover,
+.btn.success:active,
+.btn.success:focus { color: #252a30; background-color: #66fe96; border: 2px solid #66fe96; }
+
+/* @Grid */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 10px;
 }
 
-.svg-background {
-  position: fixed;
-  max-width: 300px;
-  max-height: 300px;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  z-index: 1;
-  padding: 10px;
-  opacity: 0;
-  transform: scale(.5);
-  animation: fadein .5s linear forwards;
-}
-.svg-background path {
-  fill: #2f2f2f;
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  margin: 0 -10px;
 }
 
-@keyframes init {
-  to { width: 100%; left: 0; }
+.col { padding: 10px; }
+
+.col.col-10 { width: 10%; }
+.col.col-20 { width: 20%; }
+.col.col-30 { width: 30%; }
+.col.col-40 { width: 40%; }
+.col.col-50 { width: 50%; }
+.col.col-60 { width: 60%; }
+.col.col-70 { width: 70%; }
+.col.col-80 { width: 80%; }
+.col.col-90 { width: 90%; }
+.col.col-00 { width: 100%; }
+
+@media (max-width: 768px) {
+  .col.col-10 { width: 100%; }
+  .col.col-20 { width: 100%; }
+  .col.col-30 { width: 100%; }
+  .col.col-40 { width: 100%; }
+  .col.col-50 { width: 100%; }
+  .col.col-60 { width: 100%; }
+  .col.col-70 { width: 100%; }
+  .col.col-80 { width: 100%; }
+  .col.col-90 { width: 100%; }
+  .col.col-00 { width: 100%; }
 }
 
-@keyframes fadein {
-  to { opacity: 1; transform: scale(1); }
-}
+/* @Hero */
