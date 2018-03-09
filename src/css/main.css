@@ -9,6 +9,9 @@
     @Hero
     @Introduction
     @Sections
+    @Box
+    @Card
+    @About
     @Animations
 
     //===========//
@@ -16,11 +19,11 @@
     //=========//
 
     @Primary = #fed766
-    @Primary = #252a30
-    @Primary = #febc66
-    @Primary = #fe6666
-    @Primary = #66befe
-    @Primary = #66fe96
+    @Default = #252a30
+    @Warning = #febc66
+    @Danger = #fe6666
+    @Info = #66befe
+    @Success = #66fe96
 */
 
 /* @Reset */
@@ -45,8 +48,37 @@ html, body {
   color: #252a30;
 }
 
+img { max-width: 100%; }
+
+a, a:hover,
+a:active { text-decoration: none; }
+
+.cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cover.full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
 /* @Debug */
 .debug { border: 1px solid red; }
+
+/* FontColor */
+.f-primary { color: #fed766; }
+.f-default { color: #252a30; }
+.f-warning { color: #febc66; }
+.f-danger { color: #fe6666; }
+.f-info { color: #66befe; }
+.f-success { color: #66fe96; }
 
 /* @Buttons */
 .btn {
@@ -69,10 +101,10 @@ html, body {
 .btn:focus,
 .btn:active { outline: none; }
 
-.btn.primary { color: #252a30; background-color: transparent; border: 2px solid #fed766; }
-.btn.primary:hover,
-.btn.primary:active,
-.btn.primary:focus { color: #252a30; background-color: #fed766; border: 2px solid #fed766; }
+.btn.default { color: #252a30; background-color: transparent; border: 2px solid #fed766; }
+.btn.default:hover,
+.btn.default:active,
+.btn.default:focus { color: #252a30; background-color: #fed766; border: 2px solid #fed766; }
 
 .btn.primary { color: #FFF; background-color: transparent; border: 2px solid #fed766; }
 .btn.primary:hover,
@@ -227,6 +259,12 @@ html, body {
   padding: 50px 0;
 }
 
+.section.gray {
+  background-color: #eee;
+  /*background-image: url('../images/dark-wall.png');*/
+  background-repeat: repeat;
+}
+
 .section .section-title {
   font-size: 3rem;
   font-weight: 700;
@@ -238,6 +276,56 @@ html, body {
   margin-top: 15px;
 }
 
+/* @Box */
+.box i:before { font-size: 5.0rem; }
+.box .box-title {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+/* @Card */
+.card {
+  background: white;
+  width: 100%;
+  display: inline-block;
+  margin: auto;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: -1px 15px 30px -12px rgba(0, 0, 0, .5);
+}
+
+.card-header,
+.card-body,
+.card-footer {
+  width: 100%;
+  position: relative;
+}
+
+.card-header { height: 150px; }
+
+.card-body {
+  height: auto;
+  padding: 10px;
+}
+
+.card-footer {
+  border-top: 1px solid #eee;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.card-footer .btn + .btn { margin-left: 5px; }
+
+/* @About */
+#about .box p {
+  margin:0;
+  font-size: 1.5rem;
+  padding: 0 10px 10px 10px;
+  font-weight: 300;
+}
 
 /* @Animations */
 @keyframes fadein {
