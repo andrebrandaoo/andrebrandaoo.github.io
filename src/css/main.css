@@ -12,7 +12,9 @@
     @Box
     @Card
     @About
+    @Portfolio
     @Form
+    @Label
     @Contact
     @Animations
 
@@ -307,8 +309,6 @@ a:active { text-decoration: none; }
   padding: 10px;
 }
 
-.card.portfolio .card-header { height: 150px; }
-
 .card-body {
   height: auto;
 }
@@ -326,6 +326,18 @@ a:active { text-decoration: none; }
   font-size: 1.5rem;
   padding: 0 10px 10px 10px;
   font-weight: 300;
+}
+
+/* @Portfolio */
+.card.portfolio .card-header {
+  height: 150px;
+  overflow: hidden;
+}
+
+.card.portfolio .label {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
 
 /* @Form */
@@ -368,6 +380,21 @@ a:active { text-decoration: none; }
 .input.error input,
 .input.error textarea {
   border-color: #fe6666;
+}
+
+/* @Label */
+
+.label {
+  width: auto;
+  background: #252a30;
+  height: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fed766;
+  font-weight: 700;
+  padding: 0 15px;
+  border-radius: 10px;
 }
 
 /* Contact */
