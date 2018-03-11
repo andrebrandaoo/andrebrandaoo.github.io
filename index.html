@@ -191,30 +191,44 @@
     <div id="modal-job" class="modal" v-if="interactions.modalJob">
       <div class="modal-backdrop"></div>
       <div class="modal-container">
-        <button type="button" @click="interactions.modalJob = false">close</button>
-
         <div class="container">
-          <img :src="currentJob.photo_url" :alt="currentJob.name">
 
-          <div class="" v-html="currentJob.description"></div>
+          <button type="button" class="close" @click="interactions.modalJob = false">
+            <i class="far fa-times"></i>
+          </button>
 
-          <div class="m-t-10 text-center">
-            <span class="label m-05" v-for="task in currentJob.tasks">
-              {{ task }}
-            </span>
-          </div>
+          <section class="section">
 
+            <h1 class="section-title text-center">{{ currentJob.name }}</h1>
+            <div class="m-t-10 text-center">
+              <span class="label m-05" v-for="task in currentJob.tasks" :title="task">
+                {{ task }}
+              </span>
+            </div>
+            <div class="row m-t-30">
+              <div class="col is-7">
+                <img class="thumbnail" :src="currentJob.photo_url" :alt="currentJob.name">
+              </div>
 
-          <div class="m-t-20 text-center">
-            <a
-              class="btn default"
-              target="_blank"
-              :href="currentJob.link"
-              :title="'Acessar ' + currentJob.name"
-            >
-              Acessar
-            </a>
-          </div>
+              <div class="col is-5">
+                <div class="job-description" v-html="currentJob.description"></div>
+              </div>
+
+              <div class="col is-4 center">
+                <div class="m-t-20 text-center">
+                  <a
+                    class="btn default block"
+                    target="_blank"
+                    :href="currentJob.link"
+                    :title="'Acessar ' + currentJob.name"
+                  >
+                    Acessar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
         </div>
 
       </div>

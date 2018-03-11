@@ -3,6 +3,7 @@
     //= Find in this file =//
     //====================//
     @Reset
+    @Details
     @Debug
     @Buttons
     @Grid
@@ -17,6 +18,8 @@
     @Label
     @Contact
     @Modal
+    @ModalJob
+    @Thumbnail
     @Animations
 
     //===========//
@@ -73,6 +76,24 @@ a:active { text-decoration: none; }
   height: 100%;
   width: 100%;
 }
+
+/* @Details */
+::-moz-selection { background: #fed766; color: #252a30; }
+::selection { background: #fed766; color: #252a30; }
+
+::-webkit-scrollbar { width: 5px; }
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #252a30;
+}
+
+::-webkit-scrollbar-thumb:window-inactive { background: rgba(100,100,100,0.4); }
 
 /* @Debug */
 .debug { border: 1px solid red; }
@@ -163,6 +184,8 @@ a:active { text-decoration: none; }
   flex-grow: 1;
   flex-shrink: 1;
 }
+
+.col.center { margin: 0 auto; }
 
 .col.is-10 { width: 10%; flex: none; }
 .col.is-20 { width: 20%; flex: none; }
@@ -482,10 +505,40 @@ a:active { text-decoration: none; }
   right: 0;
   margin: auto;
   position: absolute;
-  padding: 0 10px;
+  padding: 20px 10px;
   z-index: 10;
   overflow: auto;
 }
+
+.modal .close {
+  background: none;
+  background-color: #252a30;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fed766;
+  border: none;
+  position: absolute;
+  top: -10px;
+  cursor: pointer;
+  right: 10px;
+  transition: all .4s;
+}
+
+.modal .close:active,
+.modal .close:focus {
+  outline: none;
+  opacity: .8;
+}
+
+.modal .close i:before { font-size: 2rem; }
+
+/* @ModalJob */
+.job-description p { font-size: 1.5rem; }
+.job-description p + p { margin-top: 10px; }
+
+/* @Thumbnail */
+.thumbnail {border-radius: 10px; }
 
 /* @Animations */
 @keyframes fadein {
