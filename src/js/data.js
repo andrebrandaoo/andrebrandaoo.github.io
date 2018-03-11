@@ -12,19 +12,6 @@ var portfolio = [
     ]
   },
 
-  // Site Mais Bartendes
-  {
-    name: 'Site Mais Bartenders',
-    slug: 'site_mais_bartenders',
-    photo_url: '/src/images/portfolio/maisbartenders.png',
-    description: '<p>Menu Mais Bartendes é um aplicativo onde os convidados do evento podem intergir com o bar da Mais Bartenders, o usuário pode visualizar o cardápio completo do evento, curtir, salvar drinks e fazer comentários para o evento e drinks.</p><p>O Aplicativo foi desenvolvido utilizando o VueJS 2 e é servido por uma Rest API Laravel, o banco de dados é o MySQL, a infra-estrutura é hospedada na Amazon Web Services AWS e Digital Ocean.</p><p>O aplicativo conta com Login social parafacilitar o acesso de novos usuários, existe uma integração com o Facebook e Whatsapp onde o usuário pode compartilhar comentários e enviar links para outras pessoas.</p><p>É um aplicativo hibrido onde foi utilizado o Cordova para gerar os aplicativos para Android e iOS.</p>',
-    company: 'Weplanner',
-    link: 'https://maisbartenders.com.br',
-    tasks: [
-      'UI', 'UX', 'FrontEnd', 'Laravel', 'HTML', 'CSS', 'JS'
-    ]
-  },
-
   // GoUp
   {
     name: 'GoUp',
