@@ -162,23 +162,31 @@
 
         <div class="card m-t-50">
           <div class="card-body">
-            <form class="">
-              <div class="input" title="Your name">
+            <form @submit.prevent="submitForm()">
+              <div class="input" title="Your name" :class="{ 'error': errors.indexOf('name') > -1 }">
                 <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Your name">
+                <input type="text" id="name" v-model="form.name" placeholder="Your name" @blur="validInput($event)">
               </div>
 
-              <div class="input" title="Your e-mail">
+              <div class="input" title="Your e-mail" :class="{ 'error': errors.indexOf('email') > -1 }">
                 <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Your e-mail">
+                <input type="text" id="email" v-model="form.email" placeholder="Your e-mail" @blur="validInput($event)">
               </div>
 
-              <div class="input" title="Your message">
+              <div class="input" title="Your message" :class="{ 'error': errors.indexOf('msg') > -1 }">
                 <label for="msg">Message</label>
-                <textarea id="msg" placeholder="Your message"></textarea>
+                <textarea id="msg" v-model="form.msg" placeholder="Your message" @blur="validInput($event)">
+                </textarea>
               </div>
 
-              <button type="submit" class="btn default m-t-15" title="send">Send</button>
+              <button
+                type="submit"
+                class="btn default m-t-15"
+                title="Enviar"
+                :disabled="!form.name || !form.email || !form.msg"
+              >
+                Enviar
+              </button>
             </form>
           </div>
         </div>

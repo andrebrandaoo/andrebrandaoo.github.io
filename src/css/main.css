@@ -408,9 +408,12 @@ a:active { text-decoration: none; }
   font-family: 'Montserrat', sans-serif;
   padding: 1.2rem;
   border-radius: 10px;
-  border: 2px solid #252a30;
+  border: 1px solid #252a30;
   background-color: transparent
 }
+
+.input input::placeholder { color: #252a30; }
+.input textarea::placeholder { color: #252a30; }
 
 .input input:focus,
 .input textarea:focus,
@@ -441,7 +444,7 @@ a:active { text-decoration: none; }
   border-radius: 10px;
 }
 
-/* Contact */
+/* @Contact */
 .card.contact .card-header {
   height: 100px;
   display: flex;
@@ -472,6 +475,11 @@ a:active { text-decoration: none; }
 }
 
 .card.contact .card-header i:before { font-size: 6rem; }
+
+#contact .btn:disabled {
+  cursor: not-allowed;
+  opacity: .7;
+}
 
 /* @Modal */
 .modal {
