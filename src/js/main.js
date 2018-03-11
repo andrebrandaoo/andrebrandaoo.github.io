@@ -1,5 +1,4 @@
 Vue.config.debug = true;
-
 new Vue({
   name: 'app',
   el: '#app',
@@ -17,6 +16,13 @@ new Vue({
       form: { name: '', email: '', msg: '', }
     }
   },
+
+  // created () {
+  //   window.onbeforeunload = function (e) {
+  //     e.preventDefault()
+  //     this.interactions.modalJob = false
+  //   }
+  // },
 
   computed: {
     portfolio: function () {
