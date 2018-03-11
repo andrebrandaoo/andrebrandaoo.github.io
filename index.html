@@ -35,7 +35,7 @@
 
           <h3 class="m-t-30">Desenvolvedor Frontend</h3>
 
-          <button type="button" class="btn primary m-t-30" title="Yes, i'm available for hire">Yes, i'm available for hire</button>
+          <button type="button" class="btn primary m-t-30" title="Yes, i'm available for hire">Sobre</button>
 
         </div>
       </div>
@@ -46,7 +46,7 @@
     <section id="about" class="section">
       <div class="container">
         <div class="text-center">
-          <h1 class="section-title">My Expertise</h1>
+          <h1 class="section-title">Sobre</h1>
           <h2 class="section-sub">I've got chops in all phases of the design process.</h2>
         </div>
 
@@ -54,7 +54,7 @@
           <div class="col is-4">
             <div class="box text-center">
               <i class="far fa-map f-primary"></i>
-              <h3 class="box-title">Strategy</h3>
+              <h3 class="box-title">Estratégia</h3>
               <p>I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. I'm a minimalist who truly believes that less is more.</p>
             </div>
           </div>
@@ -62,18 +62,27 @@
             <div class="box text-center">
               <i class="fas fa-magic f-primary"></i>
               <h3 class="box-title">UI/UX</h3>
-
               <p>I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. I'm a minimalist who truly believes that less is more.</p>
             </div>
           </div>
           <div class="col is-4">
             <div class="box text-center">
               <i class="far fa-code f-primary"></i>
-              <h3 class="box-title">Code</h3>
-
+              <h3 class="box-title">Código</h3>
               <p>I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. I'm a minimalist who truly believes that less is more.</p>
             </div>
           </div>
+        </div>
+
+        <div class="text-center m-t-30">
+          <a
+            href="/curriculo_andre_brandao_ferreira.pdf"
+            target="_blank"
+            title="Download Currículo PDF"
+            class="btn default"
+          >
+            Download currículo
+          </a>
         </div>
 
       </div>
@@ -85,12 +94,12 @@
       <div class="container">
         <div class="text-center">
           <h1 class="section-title">Portfólio</h1>
-          <h2 class="section-sub">I've got chops in all phases of the design process.</h2>
+          <h2 class="section-sub">Os últimos trabalhos que participei no último ano.</h2>
         </div>
 
         <div class="row m-t-50">
           <div class="col is-3" v-for="(job, indexJob) in portolio">
-            <div class="card portfolio" @click="openClickedJob(job)">
+            <div class="card portfolio" @click="openClickedJob(job)" :title="'Detalhes: ' + job.name">
               <div class="card-header">
                 <div class="cover full" :style="{ backgroundImage: 'url(' + job.photo_url + ')' }"></div>
                 <span class="label">{{ job.company }}</span>
@@ -98,9 +107,6 @@
               <div class="card-body">
                 <div class="box text-center">
                   <h4 class="box-title m-t-0 text-overflow">{{ job.name }}</h4>
-                  <p>
-                    {{ job.excerpt }}
-                  </p>
                 </div>
               </div>
               <div class="card-footer">
