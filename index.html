@@ -90,7 +90,7 @@
 
         <div class="row m-t-50">
           <div class="col is-3" v-for="(job, indexJob) in portolio">
-            <div class="card portfolio">
+            <div class="card portfolio" @click="openClickedJob(job)">
               <div class="card-header">
                 <div class="cover full" :style="{ backgroundImage: 'url(' + job.photo_url + ')' }"></div>
                 <span class="label">{{ job.company }}</span>
@@ -186,6 +186,40 @@
       </div>
     </section>
     <!-- End Contact -->
+
+    <!-- Start Modal Job -->
+    <div id="modal-job" class="modal" v-if="interactions.modalJob">
+      <div class="modal-backdrop"></div>
+      <div class="modal-container">
+        <button type="button" @click="interactions.modalJob = false">close</button>
+
+        <div class="container">
+          <img :src="currentJob.photo_url" :alt="currentJob.name">
+
+          <div class="" v-html="currentJob.description"></div>
+
+          <div class="m-t-10 text-center">
+            <span class="label m-05" v-for="task in currentJob.tasks">
+              {{ task }}
+            </span>
+          </div>
+
+
+          <div class="m-t-20 text-center">
+            <a
+              class="btn default"
+              target="_blank"
+              :href="currentJob.link"
+              :title="'Acessar ' + currentJob.name"
+            >
+              Acessar
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- End Modal Job -->
 
   </div>
 

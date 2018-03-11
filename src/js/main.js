@@ -6,7 +6,10 @@ new Vue({
 
   data() {
     return {
-
+      currentJob: null,
+      interactions: {
+        modalJob: false
+      }
     }
   },
 
@@ -16,10 +19,14 @@ new Vue({
     }
   },
 
-  mounted() {
+  mounted () {
+
   },
 
   methods: {
-
+    openClickedJob: function (job) {
+      this.currentJob = job
+      this.interactions.modalJob = true
+    }
   }
 })
