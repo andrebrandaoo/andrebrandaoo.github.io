@@ -427,7 +427,10 @@ a:active { text-decoration: none; }
 .input.error input,
 .input.error textarea {
   border-color: #fe6666;
+  margin-top: 5px;
 }
+
+.input input::-webkit-autofill { background-color: transparent; }
 
 /* @Label */
 
@@ -479,6 +482,12 @@ a:active { text-decoration: none; }
 #contact .btn:disabled {
   cursor: not-allowed;
   opacity: .7;
+}
+
+#contact .f-info {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 10px;
 }
 
 /* @Modal */

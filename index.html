@@ -156,26 +156,31 @@
     <section id="contact" class="section gray">
       <div class="container">
         <div class="text-center">
-          <h1 class="section-title">Contact</h1>
+          <h1 class="section-title">Contato</h1>
           <h2 class="section-sub">I've got chops in all phases of the design process.</h2>
+          <p class="f-info" v-show="interactions.messageSuccess">Mensagem enviada com sucesso!</p>
         </div>
 
-        <div class="card m-t-50">
+        <div class="card m-t-30">
+
           <div class="card-body">
             <form @submit.prevent="submitForm()">
-              <div class="input" title="Your name" :class="{ 'error': errors.indexOf('name') > -1 }">
-                <label for="name">Name</label>
-                <input type="text" id="name" v-model="form.name" placeholder="Your name" @blur="validInput($event)">
+              <div class="input" title="Seu nome" :class="{ 'error': nameInvalid }">
+                <label for="name">Nome</label>
+                <span class="f-danger" v-show="nameInvalid">Nome é obrigatório</span>
+                <input type="text" id="name" v-model="form.name" placeholder="Seu nome" @blur="validInput($event)">
               </div>
 
-              <div class="input" title="Your e-mail" :class="{ 'error': errors.indexOf('email') > -1 }">
-                <label for="email">Email</label>
-                <input type="text" id="email" v-model="form.email" placeholder="Your e-mail" @blur="validInput($event)">
+              <div class="input" title="Seu e-mail" :class="{ 'error': emailInvalid }">
+                <label for="email">E-mail</label>
+                <span class="f-danger" v-show="emailInvalid">E-mail válido é obrigatório</span>
+                <input type="text" id="email" v-model="form.email" placeholder="Seu e-mail" @blur="validInput($event)">
               </div>
 
-              <div class="input" title="Your message" :class="{ 'error': errors.indexOf('msg') > -1 }">
-                <label for="msg">Message</label>
-                <textarea id="msg" v-model="form.msg" placeholder="Your message" @blur="validInput($event)">
+              <div class="input" title="Sua Mensagem" :class="{ 'error': msgInvalid }">
+                <label for="msg">Mensagem</label>
+                <span class="f-danger" v-show="msgInvalid">Mensagem é obrigatória</span>
+                <textarea id="msg" v-model="form.msg" placeholder="Sua Mensagem" @blur="validInput($event)">
                 </textarea>
               </div>
 
@@ -183,7 +188,7 @@
                 type="submit"
                 class="btn default m-t-15"
                 title="Enviar"
-                :disabled="!form.name || !form.email || !form.msg"
+                :disabled="!form.name || !form.email || !form.msg || nameInvalid || emailInvalid || msgInvalid"
               >
                 Enviar
               </button>
