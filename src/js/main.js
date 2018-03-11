@@ -29,7 +29,7 @@ new Vue({
   },
 
   mounted () {
-
+    // mixpanel.track('Portfólio 2018', {})
   },
 
   methods: {
