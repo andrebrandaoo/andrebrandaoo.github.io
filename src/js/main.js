@@ -19,8 +19,12 @@ new Vue({
   },
 
   computed: {
-    portolio: function () {
+    portfolio: function () {
       return portfolio
+    },
+
+    skills: function () {
+      return skills
     }
   },
 

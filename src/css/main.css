@@ -14,6 +14,7 @@
     @Card
     @About
     @Portfolio
+    @Skills
     @Form
     @Label
     @Contact
@@ -384,8 +385,14 @@ a:active { text-decoration: none; }
 
 .card.portfolio:hover .btn.default { color: #252a30; background-color: #fed766; border: 2px solid #fed766; }
 
-/* @Form */
+/* @Skills */
+#skills .svg-icon {
+  display: block;
+  width: 50px;
+  margin: 0 auto;
+}
 
+/* @Form */
 .input + .input {
   margin-top: 15px;
 }

@@ -11,7 +11,8 @@
   <title>André Brandão</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
   <link rel="stylesheet" href="src/css/main.css">
   <link rel="stylesheet" href="src/css/helpers.css">
@@ -98,7 +99,7 @@
         </div>
 
         <div class="row m-t-50">
-          <div class="col is-3" v-for="(job, indexJob) in portolio">
+          <div class="col is-3" v-for="(job, indexJob) in portfolio">
             <div class="card portfolio" @click="openClickedJob(job)" :title="'Detalhes: ' + job.name">
               <div class="card-header">
                 <div class="cover full" :style="{ backgroundImage: 'url(' + job.photo_url + ')' }"></div>
@@ -129,27 +130,16 @@
         </div>
 
         <div class="row m-t-50">
-          <div class="col is-4">
+          <div class="col is-4" v-for="(skill, indexSkill) in skills">
             <div class="box text-center">
-              <i class="far fa-map f-primary"></i>
-              <h3 class="box-title">Strategy</h3>
-              <p>I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. I'm a minimalist who truly believes that less is more.</p>
-            </div>
-          </div>
-          <div class="col is-4">
-            <div class="box text-center">
-              <i class="fas fa-magic f-primary"></i>
-              <h3 class="box-title">UI/UX</h3>
-
-              <p>I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. I'm a minimalist who truly believes that less is more.</p>
-            </div>
-          </div>
-          <div class="col is-4">
-            <div class="box text-center">
-              <i class="far fa-code f-primary"></i>
-              <h3 class="box-title">Code</h3>
-
-              <p>I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. I'm a minimalist who truly believes that less is more.</p>
+              <i :class="'f-primary ' + skill.icon" v-if="skill.icon"></i>
+              <div class="svg-icon" v-if="skill.svg">
+                <svg viewBox="0 0 128 128">
+                  <path fill="transparent" stroke="#fed766" stroke-width="6px" :d="skill.svg"></path>
+                </svg>
+              </div>
+              <h3 class="box-title">{{ skill.name }}</h3>
+              <p>{{ skill.description }}</p>
             </div>
           </div>
         </div>
