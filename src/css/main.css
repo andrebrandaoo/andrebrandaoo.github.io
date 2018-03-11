@@ -231,6 +231,10 @@ a:active { text-decoration: none; }
   display: block;
 }
 
+@media (max-width: 414px) {
+  .hero { height: 70vh; }
+}
+
 /* @Introduction */
 #introduction .logo {
   max-width: 768px;
@@ -346,7 +350,10 @@ a:active { text-decoration: none; }
   bottom: 10px;
 }
 
-.card.portfolio .cover.full { transition: all .4s; }
+.card.portfolio .cover.full {
+  transition: all .4s;
+  border-radius: 10px 10px 0 0;
+}
 
 .card.portfolio:hover .cover.full { transform: rotate(-5deg) scale(1.5); }
 
