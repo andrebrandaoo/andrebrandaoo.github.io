@@ -67,6 +67,11 @@ new Vue({
 
       this.interactions.messageSuccess = true
       this.form = { name: '', email: '', msg: '', }
+    },
+
+    sendWhatsAppMessage: function () {
+      var url = 'https://api.whatsapp.com/send?text=Olá André, vamos conversar sobre meu projeto ?';
+      window.open(url, '_system', null);
     }
   }
 })
