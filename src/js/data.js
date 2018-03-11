@@ -72,8 +72,8 @@ var portfolio = [
   // OGK
   {
     name: 'OGK Fest',
-    slug: 'ogk-fest',
-    photo_url: '/src/images/portfolio/weplaces.png',
+    slug: 'ogk',
+    photo_url: '/src/images/portfolio/ogk.png',
     excerpt: 'Resumo aqui',
     description: '<p>We Places é uma ferramenta para facilitar a vida de quem procura espaços de cerimônia e festas.</p><p>O We Places conta com uma Single Page Application (SPA) que foi desenvolvida utilizando o VueJS 2 e é servida por uma Rest API Laravel, o banco de dados é o MySQL, a infra-estrutura é hospedada na Amazon Web Services AWS e Digital Ocean.</p><p>A plataforma é uma aplicação multi clientes (Multi Tenancy) e é fornecida como SaaS (Software as a Service).</p><p>O We Places também conta com um aplicativo hibrido onde foi utilizado o Cordova para gerar os aplicativos para Android e iOS.</p>',
     company: 'Projeto Pessoal',
@@ -87,7 +87,7 @@ var portfolio = [
   {
     name: 'Valquiria Bastos - Arquiteta e Urbanista',
     slug: 'valquiria-bastos',
-    photo_url: '/src/images/portfolio/weplaces.png',
+    photo_url: '/src/images/portfolio/valquiria-bastos.png',
     excerpt: 'Resumo aqui',
     description: '<p>We Places é uma ferramenta para facilitar a vida de quem procura espaços de cerimônia e festas.</p><p>O We Places conta com uma Single Page Application (SPA) que foi desenvolvida utilizando o VueJS 2 e é servida por uma Rest API Laravel, o banco de dados é o MySQL, a infra-estrutura é hospedada na Amazon Web Services AWS e Digital Ocean.</p><p>A plataforma é uma aplicação multi clientes (Multi Tenancy) e é fornecida como SaaS (Software as a Service).</p><p>O We Places também conta com um aplicativo hibrido onde foi utilizado o Cordova para gerar os aplicativos para Android e iOS.</p>',
     company: 'Projeto Pessoal',
@@ -100,8 +100,8 @@ var portfolio = [
   // OGK
   {
     name: 'OGK Fest - Escape 2018',
-    slug: 'ogk-escape-2018',
-    photo_url: '/src/images/portfolio/weplaces.png',
+    slug: 'ogk-escape',
+    photo_url: '/src/images/portfolio/ogk-escape.png',
     excerpt: 'Resumo aqui',
     description: '<p>We Places é uma ferramenta para facilitar a vida de quem procura espaços de cerimônia e festas.</p><p>O We Places conta com uma Single Page Application (SPA) que foi desenvolvida utilizando o VueJS 2 e é servida por uma Rest API Laravel, o banco de dados é o MySQL, a infra-estrutura é hospedada na Amazon Web Services AWS e Digital Ocean.</p><p>A plataforma é uma aplicação multi clientes (Multi Tenancy) e é fornecida como SaaS (Software as a Service).</p><p>O We Places também conta com um aplicativo hibrido onde foi utilizado o Cordova para gerar os aplicativos para Android e iOS.</p>',
     company: 'Projeto Pessoal',
@@ -115,7 +115,7 @@ var portfolio = [
   {
     name: 'Dio Ferri',
     slug: 'dio-ferri',
-    photo_url: '/src/images/portfolio/weplaces.png',
+    photo_url: '/src/images/portfolio/dio-ferri.png',
     excerpt: 'Resumo aqui',
     description: '<p>We Places é uma ferramenta para facilitar a vida de quem procura espaços de cerimônia e festas.</p><p>O We Places conta com uma Single Page Application (SPA) que foi desenvolvida utilizando o VueJS 2 e é servida por uma Rest API Laravel, o banco de dados é o MySQL, a infra-estrutura é hospedada na Amazon Web Services AWS e Digital Ocean.</p><p>A plataforma é uma aplicação multi clientes (Multi Tenancy) e é fornecida como SaaS (Software as a Service).</p><p>O We Places também conta com um aplicativo hibrido onde foi utilizado o Cordova para gerar os aplicativos para Android e iOS.</p>',
     company: 'FG1',
@@ -129,7 +129,7 @@ var portfolio = [
   {
     name: 'Atlântida - Assistência Técnica',
     slug: 'atlantida',
-    photo_url: '/src/images/portfolio/weplaces.png',
+    photo_url: '/src/images/portfolio/atlantida.png',
     excerpt: 'Resumo aqui',
     description: '<p>We Places é uma ferramenta para facilitar a vida de quem procura espaços de cerimônia e festas.</p><p>O We Places conta com uma Single Page Application (SPA) que foi desenvolvida utilizando o VueJS 2 e é servida por uma Rest API Laravel, o banco de dados é o MySQL, a infra-estrutura é hospedada na Amazon Web Services AWS e Digital Ocean.</p><p>A plataforma é uma aplicação multi clientes (Multi Tenancy) e é fornecida como SaaS (Software as a Service).</p><p>O We Places também conta com um aplicativo hibrido onde foi utilizado o Cordova para gerar os aplicativos para Android e iOS.</p>',
     company: 'FG1',
@@ -143,7 +143,7 @@ var portfolio = [
   {
     name: 'Das Humanas',
     slug: 'das-humanas',
-    photo_url: '/src/images/portfolio/weplaces.png',
+    photo_url: '/src/images/portfolio/das-humanas.png',
     excerpt: 'Resumo aqui',
     description: '<p>We Places é uma ferramenta para facilitar a vida de quem procura espaços de cerimônia e festas.</p><p>O We Places conta com uma Single Page Application (SPA) que foi desenvolvida utilizando o VueJS 2 e é servida por uma Rest API Laravel, o banco de dados é o MySQL, a infra-estrutura é hospedada na Amazon Web Services AWS e Digital Ocean.</p><p>A plataforma é uma aplicação multi clientes (Multi Tenancy) e é fornecida como SaaS (Software as a Service).</p><p>O We Places também conta com um aplicativo hibrido onde foi utilizado o Cordova para gerar os aplicativos para Android e iOS.</p>',
     company: 'FG1',
@@ -157,7 +157,7 @@ var portfolio = [
   {
     name: 'LC Soldas',
     slug: 'lc-soldas',
-    photo_url: '/src/images/portfolio/weplaces.png',
+    photo_url: '/src/images/portfolio/lc-soldas.png',
     excerpt: 'Resumo aqui',
     description: '<p>We Places é uma ferramenta para facilitar a vida de quem procura espaços de cerimônia e festas.</p><p>O We Places conta com uma Single Page Application (SPA) que foi desenvolvida utilizando o VueJS 2 e é servida por uma Rest API Laravel, o banco de dados é o MySQL, a infra-estrutura é hospedada na Amazon Web Services AWS e Digital Ocean.</p><p>A plataforma é uma aplicação multi clientes (Multi Tenancy) e é fornecida como SaaS (Software as a Service).</p><p>O We Places também conta com um aplicativo hibrido onde foi utilizado o Cordova para gerar os aplicativos para Android e iOS.</p>',
     company: 'FG1',
