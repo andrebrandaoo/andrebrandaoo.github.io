@@ -23,6 +23,11 @@
   <div id="app">
     <!-- Start Introduction -->
     <section id="introduction" class="hero">
+
+      <a href="https://github.com/andrebrandaoo" class="github" title="Github" target="_blank">
+        <i class="fa fa-github"></i>
+      </a>
+
       <div class="hero-container">
         <div class="container text-center">
           <h1 class="logo">
@@ -153,6 +158,30 @@
         <div class="text-center">
           <h1 class="section-title">Contato</h1>
           <h2 class="section-sub">I've got chops in all phases of the design process.</h2>
+
+          <ul class="social">
+            <li>
+              <a href="#" title="">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="">
+                <i class="fa fa-github"></i>
+              </a>
+            </li>
+          </ul>
+
           <p class="f-info" v-show="interactions.messageSuccess">Mensagem enviada com sucesso!</p>
         </div>
 
@@ -182,7 +211,7 @@
               <button
                 type="submit"
                 class="btn default m-t-15"
-                title="Enviar"
+                :title="!form.name || !form.email || !form.msg || nameInvalid || emailInvalid || msgInvalid ? 'Preencha todos os campos corretamente para enviar' : 'Enviar'"
                 :disabled="!form.name || !form.email || !form.msg || nameInvalid || emailInvalid || msgInvalid"
               >
                 Enviar
@@ -243,6 +272,17 @@
     </div>
     <!-- End Modal Job -->
 
+    <!-- WhatsApp -->
+    <button type="button" class="button-fixed" title="Enviar mensagem pelo whatsapp">
+      <i class="fa fa-whatsapp"></i>
+    </button>
+    <!-- End WhatsApp -->
+
+    <!-- Footer -->
+    <footer>
+      <p>Desenvolvido com <i class="fa fa-heart m-r-5 f-primary"></i> Por André Brandão - 2018</p>
+    </footer>
+    <!-- End Footer -->
   </div>
 
   <script src="src/js/data.js"></script>

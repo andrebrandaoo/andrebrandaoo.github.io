@@ -6,6 +6,7 @@
     @Details
     @Debug
     @Buttons
+    @ButtonFixed
     @Grid
     @Hero
     @Introduction
@@ -18,9 +19,11 @@
     @Form
     @Label
     @Contact
+    @Social
     @Modal
     @ModalJob
     @Thumbnail
+    @Footer
     @Animations
 
     //===========//
@@ -125,6 +128,7 @@ a:active { text-decoration: none; }
 
 .btn.block { display: block; width: 100%; }
 
+button:focus,
 .btn:focus,
 .btn:active { outline: none; }
 
@@ -162,6 +166,33 @@ a:active { text-decoration: none; }
 .btn.success:hover,
 .btn.success:active,
 .btn.success:focus { color: #252a30; background-color: #66fe96; border: 2px solid #66fe96; }
+
+/* @ButtonFixed */
+.button-fixed {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  border: none;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background-color: #1ebea5;
+  color: #FFF;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.button-fixed:focus { opacity: .7; }
+
+.button-fixed i:before { font-size: 1.8rem; }
+
+.button-fixed:hover {
+  transform: scale(1.2);
+}
 
 /* @Grid */
 .container {
@@ -285,6 +316,24 @@ a:active { text-decoration: none; }
 #introduction .btn {
   opacity: 0;
   animation: fadein .5s 2.5s linear forwards;
+}
+
+#introduction .github:hover {
+  opacity: 1;
+}
+
+#introduction .github {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  color: #FFF;
+  opacity: .7;
+  transition: all .4s;
+}
+
+#introduction .github i:before {
+  font-size: 4rem;
 }
 
 /* @Sections */
@@ -497,6 +546,38 @@ a:active { text-decoration: none; }
   margin-top: 10px;
 }
 
+/* @Social */
+.social {
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.social li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 5px;
+}
+
+.social li a:hover {
+  transform: rotate(360deg);
+  color: #fed766;
+}
+
+.social li a {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #252a30;
+  color: #FFF;
+  transition: all .4s;
+}
+
+.social li a i:before { font-size: 1.6rem; }
+
 /* @Modal */
 .modal {
   position: fixed;
@@ -565,6 +646,17 @@ a:active { text-decoration: none; }
 
 /* @Thumbnail */
 .thumbnail {border-radius: 10px; }
+
+/* @Footer */
+footer {
+  background-color: #252a30;
+  color: #FFF;
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p + p { margin-top: 10px; }
 
 /* @Animations */
 @keyframes fadein {
