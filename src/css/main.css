@@ -378,7 +378,9 @@ a:active { text-decoration: none; }
   border-radius: 10px 10px 0 0;
 }
 
-.card.portfolio:hover .cover.full { transform: rotate(-5deg) scale(1.5); }
+#portfolio .col:nth-child(odd) .card.portfolio:hover .cover.full { transform: rotate(-5deg) scale(1.5); }
+#portfolio .col:nth-child(even) .card.portfolio:hover .cover.full { transform: rotate(5deg) scale(1.5); }
+
 
 .card.portfolio:hover .btn.default { color: #252a30; background-color: #fed766; border: 2px solid #fed766; }
 

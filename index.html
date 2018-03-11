@@ -97,7 +97,7 @@
               </div>
               <div class="card-body">
                 <div class="box text-center">
-                  <h4 class="box-title m-t-0">{{ job.name }}</h4>
+                  <h4 class="box-title m-t-0 text-overflow">{{ job.name }}</h4>
                   <p>
                     {{ job.excerpt }}
                   </p>
@@ -222,7 +222,7 @@
                     :href="currentJob.link"
                     :title="'Acessar ' + currentJob.name"
                   >
-                    Acessar
+                    {{ currentJob.link ? 'Acessar' : 'Projeto ainda não disponibilizado pela agência' }}
                   </a>
                 </div>
               </div>

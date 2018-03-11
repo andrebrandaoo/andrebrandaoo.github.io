@@ -14,6 +14,14 @@
 .text-right { text-align: right !important; }
 .text-justify { text-align: justify !important; }
 
+.text-overflow {
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden
+}
+
 /* @Margin */
 .m-0 { margin: 0 !important; }
 .m-05 { margin: 5px  !important; }
