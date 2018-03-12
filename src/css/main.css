@@ -441,6 +441,10 @@ button:focus,
   margin: 0 auto;
 }
 
+#skills .svg-icon path {
+  fill: #fed766;
+}
+
 /* @Form */
 .input + .input {
   margin-top: 15px;
