@@ -76,7 +76,7 @@ new Vue({
     },
 
     sendWhatsAppMessage: function () {
-      var url = 'https://api.whatsapp.com/send?text=Olá André, vamos conversar sobre meu projeto ?';
+      var url = 'https://api.whatsapp.com/send?phone=5518981573298&text=Olá André, vamos conversar sobre meu projeto ?';
       window.open(url, '_system', null);
     },
   }
