@@ -30,7 +30,7 @@
     //= Colors =//
     //=========//
 
-    @Primary = #fed766
+    @Primary = #60bbca
     @Default = #252a30
     @Warning = #febc66
     @Danger = #fe6666
@@ -82,8 +82,8 @@ a:active { text-decoration: none; }
 }
 
 /* @Details */
-::-moz-selection { background: #fed766; color: #252a30; }
-::selection { background: #fed766; color: #252a30; }
+::-moz-selection { background: #60bbca; color: #252a30; }
+::selection { background: #60bbca; color: #252a30; }
 
 ::-webkit-scrollbar { width: 5px; }
 
@@ -103,7 +103,7 @@ a:active { text-decoration: none; }
 .debug { border: 1px solid red; }
 
 /* FontColor */
-.f-primary { color: #fed766; }
+.f-primary { color: #60bbca; }
 .f-default { color: #252a30; }
 .f-warning { color: #febc66; }
 .f-danger { color: #fe6666; }
@@ -132,20 +132,20 @@ button:focus,
 .btn:focus,
 .btn:active { outline: none; }
 
-.btn.default { color: #252a30; background-color: transparent; border: 2px solid #fed766; }
+.btn.default { color: #252a30; background-color: transparent; border: 2px solid #60bbca; }
 .btn.default:hover,
 .btn.default:active,
-.btn.default:focus { color: #252a30; background-color: #fed766; border: 2px solid #fed766; }
+.btn.default:focus { color: #252a30; background-color: #60bbca; border: 2px solid #60bbca; }
 
-.btn.primary { color: #FFF; background-color: transparent; border: 2px solid #fed766; }
+.btn.primary { color: #FFF; background-color: transparent; border: 2px solid #60bbca; }
 .btn.primary:hover,
 .btn.primary:active,
-.btn.primary:focus { color: #252a30; background-color: #fed766; border: 2px solid #fed766; }
+.btn.primary:focus { color: #252a30; background-color: #60bbca; border: 2px solid #60bbca; }
 
 .btn.secondary { color: #252a30; background-color: transparent; border: 2px solid #252a30; }
 .btn.secondary:hover,
 .btn.secondary:active,
-.btn.secondary:focus { color: #fed766; background-color: #252a30; border: 2px solid #252a30; }
+.btn.secondary:focus { color: #60bbca; background-color: #252a30; border: 2px solid #252a30; }
 
 .btn.warning { color: #252a30; background-color: transparent; border: 2px solid #febc66; }
 .btn.warning:hover,
@@ -180,7 +180,7 @@ button:focus,
   justify-content: center;
   border: none;
   border-radius: 50%;
-  background-color: #fed766;
+  background-color: #60bbca;
   color: #252a30;
   cursor: pointer;
   transition: all .4s;
@@ -274,7 +274,7 @@ button:focus,
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(90deg, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
+  background: rgba(0, 0, 0, .8);
   z-index: 0;
 }
 
@@ -432,7 +432,7 @@ button:focus,
 #portfolio .col:nth-child(even) .card.portfolio:hover .cover.full { transform: rotate(5deg) scale(1.5); }
 
 
-.card.portfolio:hover .btn.default { color: #252a30; background-color: #fed766; border: 2px solid #fed766; }
+.card.portfolio:hover .btn.default { color: #252a30; background-color: #60bbca; border: 2px solid #60bbca; }
 
 /* @Skills */
 #skills .svg-icon {
@@ -442,7 +442,7 @@ button:focus,
 }
 
 #skills .svg-icon path {
-  fill: #fed766;
+  fill: #60bbca;
 }
 
 /* @Form */
@@ -468,8 +468,8 @@ button:focus,
   font-family: 'Montserrat', sans-serif;
   padding: 1.2rem;
   border-radius: 10px;
-  border: 1px solid #252a30;
-  background-color: transparent
+  border: 1px solid #eeeeef;
+  background-color: #eeeeef;
 }
 
 .input input::placeholder { color: #252a30; }
@@ -479,7 +479,7 @@ button:focus,
 .input textarea:focus,
 .input.error input:focus,
 .input.error textarea:focus {
-  border-color: #fed766;
+  border-color: #60bbca;
   outline: none;
   box-shadow: 0 0 5px rgba(0, 0, 0, .1);
 }
@@ -501,7 +501,7 @@ button:focus,
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  color: #fed766;
+  color: #60bbca;
   font-weight: 700;
   padding: 0 15px;
   border-radius: 10px;
@@ -565,7 +565,7 @@ button:focus,
 
 .social li a:hover {
   transform: rotate(360deg);
-  color: #fed766;
+  color: #60bbca;
 }
 
 .social li a {
@@ -627,7 +627,7 @@ button:focus,
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  color: #fed766;
+  color: #60bbca;
   border: none;
   position: absolute;
   top: -10px;

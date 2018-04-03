@@ -17,13 +17,6 @@ new Vue({
     }
   },
 
-  // created () {
-  //   window.onbeforeunload = function (e) {
-  //     e.preventDefault()
-  //     this.interactions.modalJob = false
-  //   }
-  // },
-
   computed: {
     portfolio: function () {
       return portfolio
@@ -35,7 +28,7 @@ new Vue({
   },
 
   mounted () {
-    mixpanel.track('Portfólio 2018', {})
+    // mixpanel.track('Portfólio 2018', {})
   },
 
   methods: {
